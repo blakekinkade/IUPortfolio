@@ -1,0 +1,220 @@
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* General */
+body, html {
+  background-color: white;
+  margin: auto;
+  height: 100%;
+  font-family: 'Raleway';
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* Links */
+a:link, a:visited {
+  text-decoration: none;
+}
+.nav {
+  color: #102626;
+}
+/* Navigation */
+nav {
+  background-color: white;
+}
+.logo img {
+  width: 65px;
+}
+nav ul {
+  margin: 0;
+  padding: 15px;
+}
+nav ul li {
+  list-style-type: none;
+  margin: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: normal;
+}
+nav ul li a:hover {
+  font-weight: bold;
+  color: #102626;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: #0090FF;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F8F8F8;
+    display: block;
+    transition: 0.3s;
+    font-weight: lighter;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0;
+}
+
+.label {
+  padding: 35px;
+}
+
+.name {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+#subject {
+  height: 200px;
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+#subjectlabel {
+  padding-right: 24px;
+}
+
+.subjectinput {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  height: 100px;
+}
+
+.socialmedia {
+  text-align: center;
+  padding: 35px;
+}
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 15px;
+  border-radius: 100%;
+  height: 60px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007BB5;
+  color: white;
+}
+
+
+.contactform {
+  text-align: center;
+  margin: auto;
+}
+
+.branding {
+  text-align: center;
+  font-size: 30px;
+  color: #0095FE;
+}
+
+/* MEDIA QUERIES */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 200px) {
+  #rwd { background-color: white; }
+.branding h1 {
+  font-size: 27px;
+}
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #rwd { background-color: white; }
+  #rwd { background-color: white; }
+.branding h1 {
+  font-size: 33px;
+}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #rwd { background-color: white; }
+.branding h1 {
+  font-size: 40px;
+}
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #rwd { background-color: white; }
+.branding h1 {
+  font-size: 50px;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #rwd { background-color: white; }
+  #rwd { background-color: white; }
+.branding h1 {
+  font-size: 50px;
+}
+}
