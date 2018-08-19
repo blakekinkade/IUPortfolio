@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!--I360 Project 3 -->
+
+<head>
+	<meta charset="utf-8">
+	<title>Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<link href="http://html.soic.indiana.edu/~bakinkad/FinalProject/css/contact.css" rel="stylesheet" type="text/css" media="all">
+
+
+
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+</head>
+
+<body>
+	<div id="rwd"></div>
+
+	<!-- Navigation -->
+	<nav role="navigation">
+		<div class="container">
+			<ul>
+				<span style="color:#0090FF;font-size:50px;cursor:pointer;float: right;padding-right: 10px;" onclick="openNav()">&#9776;</span>
+				<li class='logo'><a href='http://html.soic.indiana.edu/~bakinkad/FinalProject/html/index.html'><img src='http://html.soic.indiana.edu/~bakinkad/FinalProject/images/logo-with-circle.png' alt='Blake Kinkade'></a></li>
+				<li>
+					<div id="mySidenav" class='sidenav'>
+						<a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>&times;</a>
+							<a class='pages' href='http://html.soic.indiana.edu/~bakinkad/FinalProject/html/index.html'>HOME</a>
+							<a class='pages' href='http://html.soic.indiana.edu/~bakinkad/FinalProject/html/portfolio.html'>PORTFOLIO</a>
+							<a class='pages' href='http://html.soic.indiana.edu/~bakinkad/FinalProject/html/about.html'>ABOUT</a>
+							<a class='pages' href='http://html.soic.indiana.edu/~bakinkad/FinalProject/html/contact.html'>CONTACT</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+
+
+	<!-- Header -->
+	<header role="banner">
+		<div class="container">
+			<div class="branding">
+				<h1>CONTACT</h1>
+			</div>
+		</div>
+	</header>'
+
+<section class='socialmedia'>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-linkedin"></a>
+</section>
+<main class="contactform">
+  <form action="/action_page.php">
+    <label class="fname">First Name</label>
+    <input type="text" class="name" name="firstname"><br>
+
+    <label class="lname">Last Name</label>
+    <input type="text" class="name" name="lastname"><br>
+
+    <label id='subjectlabel'>Subject</label>
+    <input type="text" class="subjectinput" name="subjectlabel"><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</main>
+
+</body>
+</html>

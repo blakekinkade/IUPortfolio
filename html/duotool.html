@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!--I360 Project 3 -->
+
+<head>
+  <meta charset="utf-8">
+  <title>IU Duo Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900" rel="stylesheet"> 
+
+  <link href="/Users/blakekinkade/Documents/FOLDERS1/School/IU/FallSemester2018/UX-Portfolio/css/duotool.css" rel="stylesheet" type="text/css" media="all">
+
+
+
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+    } 
+</style>
+</head>
+
+<body>
+  <div id="rwd"></div>
+
+  <!-- Navigation -->
+  <nav role="navigation">
+    <div class="container">
+      <ul>
+         <li class='logo'><a href='/Users/blakekinkade/Documents/FOLDERS1/School/IU/FallSemester2018/UX-Portfolio/index.html'><img src='/Users/blakekinkade/Documents/FOLDERS1/School/IU/FallSemester2018/UX-Portfolio/images/logo-with-circle.png' alt='Blake Kinkade'></a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+<main>
+
+
+<div class='header'><img src='/Users/blakekinkade/Documents/FOLDERS1/School/IU/FallSemester2018/UX-Portfolio/images/duotool-banner.svg'>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class='overview'>
+  <div><p class='info'>DURATION:</p><p>5 Days</p></div>
+
+  <div><p class='info'>TEAM:</p><p>Blake Kinkade, Zeshan Ahmed, Rayhaan Hameed, Joohee Kang</p></div>
+
+  <div><p class='info'>ROLE:</p><p>Research, Documentation, Prototype</p></div>
+
+  <div><p class='info'>RESEARCH METHODS:</p><p>Primary Research, Secondary Research, Usability Test</p></div>
+</div>
+
+<section>
+  <h2 class='headers'>PROBLEM:</h2>
+    <div class='material'>
+      <p>IU’s Two Step Login has multiple design issues and more importantly, multiple functionality issues that hinder efficiency and convenience. How can we redesign the tool to keep security high while maintaining efficiency and convenience?</p>
+    </div>
+  <h2 class='headers'>BRAINSTORMING AND RESEARCH:</h2>
+    <h2>User Interviews & Usability Test</h2>
+      <div class='material'>
+        <p>To begin the project, our team brainstormed to determine exactly what we were to accomplish and what we needed to focus on in the redesign. We came up with two main questions that once answered, would provide direction and insight into how we are to redesign the app.
+        <ol>
+          <li>What were the causes and problems that led to this tool being implemented?</li>
+
+          <li>What are the feelings and reactions that users have when using the tool? What is the language they use when expressing themselves?</li>
+        </ol>
+        <p>
+      We had some knowledge on the second question as we all were active users of the tool, but we wanted to think objectively about the tool and not use our preconceived notions to redesign the tool.<br><br>
+
+      Upon looking at over 50 user reviews of the current tool, an overwhelming 76% were negative reviews, while only 24% were positive. This imbalance of reviews led us as a team to analyze each positive and negative review and determine reasons why users dislike the tool and why they like the tool.<br><br>
+
+      Below is a chart containing words and phrases that users wrote to describe their feelings towards the Two Step Login tool (please note that many of these were used more than once).</p>
+        <img alt='chart' class='pictures1' src='/Users/blakekinkade/Documents/FOLDERS1/School/IU/FallSemester2018/UX-Portfolio/images/chart.png'><br>
+
+      <p>The top reasons for the negative words and feelings from users:</p>
+      <ol>
+
+        <li>Users must authenticate every time on every device.</li>
+
+        <li>Users have to use it for sites like Canvas or clocking into work (which have no important information).</li>
+
+        <li>Users already have a 15 character minimum password that’s required for sign in.</li>
+
+        <li>Users must have their second device on them if they want to log in.</li>
+      </ol>
+
+      <p>As already stated, the positive reviews were scarce, and the few that existed all were centered on the need for extra security and extra assurance.</p></p>
+    </div><br><br>
+  <h2>Expert Commentary</h2>
+    <div class='material'>
+      <p>In our research, we as a team were led to an article concerning the reasons for which this tool was implemented (1). In this article, Brad Wheeler, VP of Information Technology at IU, discussed the extensive attempts to combat phishing attacks at IU. “Hundreds of IU employees continued to unknowingly give their IU Passphrases to the cybercriminals behind the phish, and the cybercriminals continued to try to use that information for their personal gain.”<br><br>
+
+      Wheeler said it was time for a trade-off to be made, and Two-Step was thus implemented.<br><br>
+
+      We also found another article in IU’s Knowledge Base about phishing scams (2), and in it was an example of a phishing scam (posted below) that has been used towards IU members.<br>
+      <img alt='email' class='pictures' src='/Users/blakekinkade/Documents/FOLDERS1/School/IU/FallSemester2018/UX-Portfolio/images/email.png'><br>
+      Finally, we discovered that Wheeler performed a test back in 2015 to determine how many IU faculty fall prey to phishing (3). He sent a fake email to 1000 faculty members asking for their username and password. Out of that 1000, about 15% were tricked.</p>
+    </div><br><br>
+  <h2>Interview/Usability Test</h2>
+    <div class='material'>
+      <p>To validate the user reviews, we interviewed Blake’s roommate, Darian, while also conducting a usability test of the current design. When asked his thoughts on the tool, he stated,<br><br>
+
+      <i>“I hate it as it’s a nuisance to do it every time, and while I like the added security, I hate the fact that I have to pull my phone out every time I login to my IU account as it slows me down and is a pain.”</i><br><br>
+
+      His thoughts certainly were in line with the reviews, but to truly visualize the act, we had him sign in to his google account (no 2-step) and then his IU account 3 times to time the differences, and set it up as if he was on campus signing in (he typically has his phone in his pocket and is sitting down). Here is what the results were: 
+
+      <ul>
+        <li><b>1st Run:</b> Google: 9 sec IU: 17 sec</li>
+        <li><b>2nd Run:</b> Google: 7 sec IU: 17 sec</li>
+        <li><b>3rd Run:</b> Google: 6 sec IU: 16 sec</li>
+      </ul>
+      <p>We noticed that perhaps the biggest reason for the differentiation in length of time was the fact that Darian had to take the phone out of this pocket each time. Regardless, it validated the reviews and thoughts on the tool being an inconvenience and offered an explanation for the harsh words on it.<br><br></p>
+
+      <p>Darian also discussed the confusing layout of the tool when signing into the computer (shown below).<br><br></p>
+      <img alt='Duo layout' class='pictures' src='/Users/blakekinkade/Documents/FOLDERS1/School/IU/FallSemester2018/UX-Portfolio/images/duolayout.png'><br>
+      <p>Darian explained that he gets “overwhelmed” by everything that is on the page, as well as not understanding why the primary action that is happening (sending a push) is at the bottom while the backup methods are the most visible. He said that while he understands it now, first time users would get confused, just as he did.</p></p>
+    </div>
+
+  <h2 class='headers'>TEAM INSIGHTS:</h2>
+    <div class='material'><p>After reflecting on all our research, we had some general thoughts. The purpose and function of the Two-Step tool: 
+      <ul>
+        <li>The security breaches were not due to any technical manipulation or hacking. They are a direct result of users giving out their information. Criminals were dependent on the user providing them their credentials.</li>
+
+        <li>Two-Step eliminates the possibility of a mass phishing email as one would have to coordinate a time and date with a user for when they would approve a login.</li>
+
+        <li>Because of the elimination of a mass phishing scam, it seems as if that was the primary goal in this implementation. Though the single attacks are made more challenging to achieve, they are certainly still possible.</li>
+
+        <li>Elimination of mass phishing is caused by the personalized confirmation by each user for each login.</li>
+      </ul>
+    <p>We came to the conclusion that the overall focus we need to have for the redesign is providing a quicker and easier way for Two-Step Login. Because the primary reason for the implementation of the tool was preventing mass phishing attacks, having a physical device for confirmation is necessary as users can’t send their device, only their login credentials.</p></p>
+	</div>
+
+  <h2 class='headers'>REDESIGN</h2>
+          <img alt='Screens' class='pictures1' src='/Users/blakekinkade/Documents/FOLDERS1/School/IU/FallSemester2018/UX-Portfolio/images/duotoolscreen1.png'>
+        <img alt='Screens' class='pictures1' src='/Users/blakekinkade/Documents/FOLDERS1/School/IU/FallSemester2018/UX-Portfolio/images/duotoolscreen2.png'>
+    <div class='material'><p>We were able to come up with an extremely similar design that functions a different way. Instead of requiring the user to manually respond to a notification, the system will detect the locations of the device being used and their phone, and if they are less than 3 feet away, the login is approved. This assures that it’s the user who is signing in. Backup methods can also be used, which are also methods existing in the current design. These methods are calling your assigned device, sending a push notification to it, or using a “fob key” given by IU Tech administrators that have a unique code generated on it every time you sign in. Fob keys are small devices you can put on your keychain.<br><br>
+
+    We got rid of a lot of the unnecessary “clutter” of the page and made it as simple as possible.<br><br>
+
+    Once you enter your credentials, the device detection runs for ten seconds. If it can’t detect your device after ten seconds, it stops and you have to run it again. By doing this, it allows you to actually be able to use the backup methods. For example, if your parent is trying to get on your account for something, after entering in the credentials, they can click on the backup button as the location detection will be running, but won’t do anything as your device isn’t 3 feet away from their device. The parent can then send a push notification to your phone and you can confirm their login.<br><br>
+
+    I used Principle to create a simple and quick prototype of what it would look like in action.</p><br></div>
+
+    <iframe class='pictures' src="https://player.vimeo.com/video/236598182" width="640" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+    </div>
+  <h2 class='headers'>REFLECTION AND COMMENTS</h2>
+  <p>Though we didn’t have enough time for in depth user testing this redesign, we did give a few people a paper prototype and got their thoughts on the product. All of the reactions were extremely positive. The primary concern was if their phone dies or they don’t have access to it, but after explaining the backup method of having a fob, the concerns died out.<br><br>
+  Regarding the technology behind this, we went and talked to the Technology Services Department at IU, and their staff, after hearing our idea, said it was possible. Again, if there was more time, we would have explored the possibilities of the technology more.</p>
+</section>
+</main>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = true;
+        var gallery = false;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+</body>
+</html>
