@@ -138,7 +138,7 @@ h2 {
   #rwd { background-color: white; }
 .overview {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
   font-size: 25px;
 }
@@ -146,7 +146,12 @@ h2 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #rwd { background-color: white; }
-
+.overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  font-size: 25px;
+}
 
 
 /* Medium devices (tablets, 768px and up) */
