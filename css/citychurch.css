@@ -106,7 +106,9 @@ p, li {
   margin-top: 0.5em;
   font-size: 19px;
   color: #555555;
-  line-height: 40px;
+}
+section {
+    line-height: 40px;
 }
 
 .headers {
