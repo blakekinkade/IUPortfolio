@@ -153,6 +153,12 @@ h2 {
   display: block;
   margin: auto;
 }
+  .overview {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  font-size: 25px;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #rwd { background-color: white; }
