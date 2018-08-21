@@ -1423,7 +1423,7 @@ text-align: center;
 
 .projects {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px 200px;
   grid-template-rows: 230px 230px;
   grid-column-gap: 20px;
   grid-row-gap: 30px;
