@@ -364,6 +364,59 @@ text-align: center;
   height: 250px;
 }
 
+.about {
+  display: grid;
+  margin: auto;
+  width: 1100px;
+/*  grid-template-columns: 45% 45%;/*
+/*  grid-template-rows: 5% 95%;*/
+  grid-column-gap: 5%;
+  background-color: white;
+  padding-left: 2.5%;
+  padding-right: 2.5%
+}
+.first {
+  grid-column: 1;
+  margin: auto;
+}
+.second {
+  grid-column: 2;
+  margin: auto;
+}
+
+#title {
+  grid-row: 1;
+  grid-column: 1;
+color: #1997fb !important;
+font-size: 30px;
+line-height: 80px;
+text-transform: uppercase !important;
+text-shadow: none;
+font-family: Montserrat;
+font-weight: 700;
+font-style: normal;
+text-align: center;
+}
+
+.footer {
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: gray;
+   text-align: center;
+ }
+ .footerline {
+  color: #EBEBEB;
+ }
+ .copyright {
+  font-size: 8px;
+ }
+.htmlcss {
+  font-size: 10px;
+}
+
 /* Utilities */
 .sr-only {
   position: absolute;
