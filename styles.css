@@ -27,6 +27,36 @@ nav ul li {
   width: 65px;
 }
 
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: white;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #DEDEDE;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #555555;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 /* Header */
 header {
   background-color: white;
@@ -92,7 +122,7 @@ text-align: center;
 
 .projects {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px 200px;
   grid-template-rows: 230px 230px;
   grid-column-gap: 20px;
   grid-row-gap: 30px;
