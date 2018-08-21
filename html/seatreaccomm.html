@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -5,10 +7,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Seat Reaccommodation</title>
+  <title>Seat Reaccomm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900" rel="stylesheet">  
   <link href="/css/seatreaccomm.css" rel="stylesheet" type="text/css" media="all">
 
 
@@ -16,6 +20,13 @@
     <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+    } 
+</style>
 </head>
 
 <body>
@@ -31,37 +42,60 @@
   </nav>
 
 
-<h3 class='title'>Seat Reaccommodation</h3>
-<div class='header'><img src='/images/citychurchbanner.jpg'>
+
+<div class='header'><img src='/images/seatreaccommmock.svg'>
 </div>
 <br>
-<hr>
+<br>
+<br>
+<br>
 
-<!-- <div class='overview'>
-  <div><p class='info'>DURATION:</p><p>3 Days</p></div>
+  
+<main>
 
-  <div><p class='info'>TEAM:</p><p>Solo</p></div>
 
-  <div><p class='info'>ROLE:</p><p>Designer</p></div>
+<section>
+  <h2 class='headers'>INTRODUCTION:</h2>
+    <p> Currently, airline agents reaccommodate passengers to different planes via a blue screen command line, which is quite inefficient and challenging, as there are specific commands that each user must know in order to successfully operate it. As such, the idea of creating an admin user interface was introduced, and the Airline Solutions DX UX team was asked to help design the interface. I was tasked with designing a Seat Reaccommodation interface.
+    </p>
+  <h2 class='headers'>PROBLEM:</h2>
+      <div class='material'>
+        <p>Currently, Audible is equipped with a driving mode for users and is represented by a car icon at the top of the screen. However, users have trouble highlighting and bookmarking passages while driving. How can we solve this and present a solution that allows users to easily highlight passages while driving?</p>     
+      </div>
 
-  <div><p class='info'>RESEARCH METHODS:</p><p>Interviews, Personas, Secondary Research, Usability Testing</p></div>
-</div> -->
-
-<section class='sections'>
-  <h2 class='main'>Introduction:</h2>
+  <h2 class='headers'>Redesign</h2>
     <div class='material'>
-      Currently, airline agents reaccommodate passengers to different planes via a blue screen command line, which is quite inefficient and challenging, as there are specific commands that each user must know in order to successfully operate it. As such, the idea of creating an admin user interface was introduced, and the Airline Solutions DX UX team was asked to help design the interface. I was tasked with designing a Seat Reaccommodation interface.
-    </div>
-
-
-  <h2 class='main'>REDESIGN:</h2>
-    <p>Due to company privacy, please contact me to see final deliverables.</p>
+      <p>Due to company privacy, please contact me to see final deliverables</p>
 </section>
+</main>
 <br><br>
 <div class="footer">
 	<hr class='footerline'>
 	<p class='copyright'>&#169; 2018</p>
   <p class='htmlcss'>Made with HTML/CSS</p>
 </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = true;
+        var gallery = false;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
 </body>
 </html>
