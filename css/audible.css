@@ -136,6 +136,25 @@ h2 {
   text-align: center;
 }
 
+.footer {
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: gray;
+   text-align: center;
+ }
+ .footerline {
+  color: #EBEBEB;
+ }
+ .copyright {
+  font-size: 8px;
+ }
+.htmlcss {
+  font-size: 10px;
+}
+
 /* MEDIA QUERIES */
 
 /* Smaller devices (landscape phones, 200px and up) */
