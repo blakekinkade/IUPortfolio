@@ -160,6 +160,28 @@ h2 {
 /* Smaller devices (landscape phones, 576px and below) */
 @media (min-width: 200px) {
   #rwd { background-color: white; }
+
+/* Header */
+.header {
+  padding-top: 20px;
+  border-radius: 2px;
+  height: 109.7px;
+  margin: auto;
+  position: relative;
+  width: 250px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+}
+.header img {
+  height: 109.7px;
+  margin: auto;
+  position: relative;
+  width: 250px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
 .pictures1 {
   width: 200px;
   text-align: center;
@@ -181,6 +203,27 @@ h2 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   #rwd { background-color: white; }
+/* Header */
+.header {
+  padding-top: 20px;
+  border-radius: 2px;
+  height: 226.1px;
+  margin: auto;
+  position: relative;
+  width: 515px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+}
+.header img {
+  height: 226.1px;
+  margin: auto;
+  position: relative;
+  width: 515px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
 
 .overview {
   display: grid;
@@ -203,8 +246,30 @@ h2 {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+ @media screen and (max-width: 991px) and (min-width: 768px) {
   #rwd { background-color: white; }
+
+/* Header */
+.header {
+  padding-top: 20px;
+  border-radius: 2px;
+  height: 316.1px;
+  margin: auto;
+  position: relative;
+  width: 720px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+}
+.header img {
+  height: 316.1px;
+  margin: auto;
+  position: relative;
+  width: 720px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
 .pictures1 {
   width: 50%;
   text-align: center;
@@ -222,6 +287,28 @@ h2 {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #rwd { background-color: white; }
+
+/* Header */
+.header {
+  padding-top: 20px;
+  border-radius: 2px;
+  height: 483px;
+  margin: auto;
+  position: relative;
+  width: 1100px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+}
+.header img {
+  height: 483px;
+  margin: auto;
+  position: relative;
+  width: 1100px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
  .pictures1 {
   width: 50%;
   text-align: center;
