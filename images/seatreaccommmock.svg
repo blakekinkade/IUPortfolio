@@ -15,7 +15,8 @@
                 </mask>
                 <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
                 <text id="Seat-Reaccommodation" mask="url(#mask-2)" font-family="Avenir-Heavy, Avenir" font-size="48" font-weight="600" letter-spacing="-0.9666666" fill="#000000">
-                    <tspan x="570.302666" y="253">Seat Reaccommodation</tspan>
+                    <tspan x="778.157333" y="224">Seat </tspan>
+                    <tspan x="625.265999" y="290">Reaccommodation</tspan>
                 </text>
                 <g mask="url(#mask-2)">
                     <mask id="mask-4" fill="white">
