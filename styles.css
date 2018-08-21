@@ -442,9 +442,31 @@ text-align: center;
  @media screen and (max-width: 1080px) and (min-width: 200px) {
   #rwd { background-color: white; }
 
+.branding {
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+  color: #0090FF;
+}
+
 .branding h1 {
   font-size: 30px;
+  font-family: Montserrat;
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:3s;
+  -moz-animation-duration:3s;
+  animation-duration:3s;
+  text-align: center;
 }
+
 /*UI/UX*/
 
 .uiux {
