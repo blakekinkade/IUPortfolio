@@ -40,10 +40,9 @@ header {
 
 }
 
-/*@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-*/
 
 .branding {
   text-align: center;
@@ -445,12 +444,12 @@ text-align: center;
 .branding {
   text-align: center;
   margin: auto;
-  font-size: 30px;
+  font-size: 40px;
   color: #0090FF;
 }
 
 .branding h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-family: Montserrat;
   opacity:0;
   -webkit-animation:fadeIn ease-in 1;
