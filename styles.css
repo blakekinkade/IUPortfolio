@@ -364,6 +364,8 @@ text-align: center;
   height: 250px;
 }
 
+/*ABOUT*/
+
 .about {
   display: grid;
   margin: auto;
@@ -397,6 +399,8 @@ font-weight: 700;
 font-style: normal;
 text-align: center;
 }
+
+/*FOOTER*/
 
 .footer {
 
@@ -725,6 +729,25 @@ text-align: center;
 .tattoo img {
   width: 250px;
   height: 175px;
+}
+
+.travologo {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.travologo img {
+  width: 250px;
+  height: 175px;
+}
+
+.first {
+  grid-column: 1;
+  margin: auto;
+}
+.second {
+  grid-column: 1;
+  margin: auto;
 }
 
 /* Utilities */
