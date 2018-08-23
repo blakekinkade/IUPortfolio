@@ -108,6 +108,13 @@ section {
 
 }
 
+.material img {
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
 .footer {
 
    left: 0;
