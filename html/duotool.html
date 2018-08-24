@@ -21,6 +21,11 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
   <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
 <style type="text/css">
     a.fancybox img {
@@ -84,7 +89,9 @@
       Upon looking at over 50 user reviews of the current tool, an overwhelming 76% were negative reviews, while only 24% were positive. This imbalance of reviews led us as a team to analyze each positive and negative review and determine reasons why users dislike the tool and why they like the tool.<br><br>
 
       Below is a chart containing words and phrases that users wrote to describe their feelings towards the Two Step Login tool (please note that many of these were used more than once).</p>
-        <img alt='chart' class='pictures1' src='/images/chart.png'><br>
+	<a href="/images/chart.png" data-fancybox><img class='pictures1' src='/images/chart.png'></a><br>
+
+
 
       <p>The top reasons for the negative words and feelings from users:</p>
       <ol>
@@ -107,7 +114,8 @@
       Wheeler said it was time for a trade-off to be made, and Two-Step was thus implemented.<br><br>
 
       We also found another article in IU’s Knowledge Base about phishing scams (2), and in it was an example of a phishing scam (posted below) that has been used towards IU members.<br>
-      <img alt='email' class='pictures' src='/images/email.png'><br>
+	<a href="/images/email.png" data-fancybox><img class='pictures' src='/images/email.png'></a><br>
+
       Finally, we discovered that Wheeler performed a test back in 2015 to determine how many IU faculty fall prey to phishing (3). He sent a fake email to 1000 faculty members asking for their username and password. Out of that 1000, about 15% were tricked.</p>
     </div><br><br>
   <h2>Interview/Usability Test</h2>
@@ -126,7 +134,8 @@
       <p>We noticed that perhaps the biggest reason for the differentiation in length of time was the fact that Darian had to take the phone out of this pocket each time. Regardless, it validated the reviews and thoughts on the tool being an inconvenience and offered an explanation for the harsh words on it.<br><br></p>
 
       <p>Darian also discussed the confusing layout of the tool when signing into the computer (shown below).<br><br></p>
-      <img alt='Duo layout' class='pictures' src='/images/duolayout.png'><br>
+	<a href="/images/duolayout.png" data-fancybox><img class='pictures' src='/images/duolayout.png'></a><br>
+
       <p>Darian explained that he gets “overwhelmed” by everything that is on the page, as well as not understanding why the primary action that is happening (sending a push) is at the bottom while the backup methods are the most visible. He said that while he understands it now, first time users would get confused, just as he did.</p></p>
     </div>
 
@@ -145,8 +154,10 @@
 	</div>
 
   <h2 class='headers'>REDESIGN</h2>
-          <img alt='Screens' class='pictures1' src='/images/duotoolscreen1.png'>
-        <img alt='Screens' class='pictures1' src='/images/duotoolscreen2.png'>
+	<a href="/images/duotoolscreen1.png" data-fancybox><img class='pictures1' src='/images/duotoolscreen1.png'></a>
+	<a href="/images/duotoolscreen2.png" data-fancybox><img class='pictures1' src='/images/duotoolscreen2.png'></a>
+
+
     <div class='material'><p>We were able to come up with an extremely similar design that functions a different way. Instead of requiring the user to manually respond to a notification, the system will detect the locations of the device being used and their phone, and if they are less than 3 feet away, the login is approved. This assures that it’s the user who is signing in. Backup methods can also be used, which are also methods existing in the current design. These methods are calling your assigned device, sending a push notification to it, or using a “fob key” given by IU Tech administrators that have a unique code generated on it every time you sign in. Fob keys are small devices you can put on your keychain.<br><br>
 
     We got rid of a lot of the unnecessary “clutter” of the page and made it as simple as possible.<br><br>
@@ -168,12 +179,12 @@
 	<p class='copyright'>&#169; 2018</p>
   <p class='htmlcss'>Made with HTML/CSS</p>
 </div>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.min.js"></script>
 <script type="text/javascript">
     $(function($){
-        var addToAll = true;
+        var addToAll = false;
         var gallery = false;
         var titlePosition = 'inside';
         $(addToAll ? 'img' : 'img.fancybox').each(function(){
