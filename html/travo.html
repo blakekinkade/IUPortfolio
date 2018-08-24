@@ -23,6 +23,17 @@
     <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+    } 
+</style>
 </head>
 
 <body>
@@ -93,12 +104,12 @@
     </p><br><br>
 <h2>User Flows</h2>
   <p>Before taking the time to create the low fidelity and high fidelity designs, I wanted to create a user flow based on the research and our team’s overall thoughts. This is extremely simple as we wanted to make the app very minimal given that we have a (relatively) small target audience. Having a small and specific target audience eliminates the need to have ample options/features that adhere to a wide variety of users.<br>
-    <img alt='User Flow' class='pictures' src='/images/userflowtravo.png'>
+    	<a href="/images/userflowtravo.png" data-fancybox><img class='pictures' src='/images/userflowtravo.png'></a>
   </p>
 <h2 class='headers'>WIREFRAMES</h2>
     <p>After the user flow and research was done with their initial stages, I started on creating the wireframes for each screen. With the app, we had decided on three “roles” associated with the users of the app, that being the drivers, riders, and administrators. Because of both the limited time and the criteria the judges were to judge the projects on, we put the design focus on the riders’ screens as they are the primary users.
-        <img alt='Screens' class='pictures1' src='/images/travoscreens1.png'>
-        <img alt='Screens' class='pictures1' src='/images/travoscreens2.png'>
+    	<a href="/images/travoscreens1.png" data-fancybox><img class='pictures1' src='/images/travoscreens1.png'></a>
+    	<a href="/images/travoscreens2.png" data-fancybox><img class='pictures1' src='/images/travoscreens2.png'></a>
     </p>
 <h2 class='headers'>PROTOTYPE</h2>
   <p>
@@ -115,5 +126,28 @@
 	<p class='copyright'>&#169; 2018</p>
   <p class='htmlcss'>Made with HTML/CSS</p>
 </div>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = false;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
 </body>
 </html>
