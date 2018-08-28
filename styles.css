@@ -363,6 +363,11 @@ text-align: center;
   height: 250px;
 }
 
+.crypto img {
+  width: 360px;
+  height: 250px;
+}
+
 /*ABOUT*/
 
 .about {
