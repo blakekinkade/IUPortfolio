@@ -79,7 +79,7 @@ header {
 }
 
 .uiux h3 {
-color: #1997fb !important;
+color: silver !important;
 font-size: 30px;
 line-height: 80px;
 text-transform: uppercase !important;
@@ -181,7 +181,7 @@ text-align: center;
 }
 
 .research h3 {
-color: #1997fb !important;
+color: silver !important;
 font-size: 30px;
 line-height: 80px;
 text-transform: uppercase !important;
@@ -283,7 +283,7 @@ text-align: center;
 }
 
 .misc h3 {
-color: #1997fb !important;
+color: silver !important;
 font-size: 30px;
 line-height: 80px;
 text-transform: uppercase !important;
@@ -772,7 +772,27 @@ text-align: center;
   width: 250px;
   height: 175px;
 }
+   
 
+.crypto {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.crypto img {
+  width: 250px;
+  height: 175px;
+}
+
+.seatrea1 {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.seatrea1 img {
+  width: 250px;
+  height: 175px;
+}
 .about {
   display: block;
   margin: none;
